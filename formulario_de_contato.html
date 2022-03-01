@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+<style>
+  body, select, input, button {
+    font-family: 'Poppins', sans-serif;
+  }
+  p {
+    color: #253171;
+  }
+  #contact-form {
+    width: 90vw;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #253171 ;
+
+  }
+</style>
+  <title>Modelo de formulário de contato com CSS para vários usos</title>
+</head>
+<body>
+  <h1>Modelo de formulário de contato com CSS para vários usos</h1>
+  <form action="" id="contact-form" title="Formulário de contato">
+    <label for="input_subject">Assunto:</label>
+      <select name="subject" id="input_subject">
+        <option value="Suporte">Suporte</option>
+        <option value="Vendas">Vendas</option>
+        <option value="Recursos Humanos">Recursos Humanos</option>
+        <option value="Outros">Outros</option>
+      </select>    
+    <p>
+      <label for="input_name">Nome:</label><br>
+        <input type="text" name="name" id="input_name">
+    </p>
+    <p>
+      <label for="input_email">E-mail:</label><br>
+        <input type="email" name="email" id="input_email">
+    </p>
+    <p>
+      <label for="input_message">Mensagem:</label><br>
+      <textarea name="message" id="input_message" cols="30" rows="10"></textarea>
+    </p>
+    <p> 
+      <input type="checkbox" name="allow_mailling" id="allow_mailling">
+      <label for="allow_mailling">Autorizo receber mensagens e propagandas em meu e-mail.</label>
+    </p>
+    <button type="submit" id="contact-form-submit"><label for="contact-form-submit">ENVIAR</label></button>
+  </form>
+</body>
+</html>
