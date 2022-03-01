@@ -26,9 +26,9 @@
 <body>
   <h1>Modelo de formulário de contato com CSS para vários usos</h1>
   <form action="" id="contact-form" title="Formulário de contato">
-    <fieldset>
+    <fieldset> <!-- Fieldset é usado para agrupar um conjunto de dados pelo mesmo assunto -->
       <legend>Modelo de formulário de contato</legend>
-    <label for="input_subject">Assunto:</label>
+    <label for="input_subject">Assunto:</label> <!-- label é uma tag de acessibilidade, ela ajuda os leitores a entenderem o que o formulário está pedindo naquele campo. Quando estiver antes do input, deveremos indicar a qual input este label se refere. -->
       <select name="subject" id="input_subject">
         <option value="Suporte">Suporte</option>
         <option value="Vendas">Vendas</option>
@@ -41,17 +41,17 @@
     </p>
     <p>
       <label for="input_email">E-mail:</label><br>
-        <input type="email" name="email" id="input_email">
+        <input type="email" name="email" id="input_email" required >
     </p>
     <p>
       <label for="input_message">Mensagem:</label><br>
       <textarea name="message" id="input_message" cols="30" rows="10"></textarea>
     </p>
     <p> 
-      <input type="checkbox" name="allow_mailling" id="allow_mailling" checked>
+      <input type="checkbox" name="allow_mailling" id="allow_mailling" checked required minlength="10">
       <label for="allow_mailling">Autorizo receber mensagens e propagandas em meu e-mail.</label>
     </p>
-    <button type="submit" id="contact-form-submit"><label for="contact-form-submit">ENVIAR</label></button>
+    <button type="submit" id="contact-form-submit">ENVIAR</button>
   </fieldset>
   </form>
 </body>
