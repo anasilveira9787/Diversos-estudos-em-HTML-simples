@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+.root{
+  box-sizing: border-box;
+}
+#container {
+  background-color: black;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+align-items: center;
+}
+#fundo {
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 50vw;
+height: 50vw;
+background: rgb(131,58,180);
+background: linear-gradient(184deg, rgba(131,58,180,1) 12%, rgba(223,28,106,1) 47%, rgba(253,29,29,1) 74%, rgba(252,176,69,1) 100%);
+border-radius: 20%;
+}
+
+#borda-branca {
+box-sizing: border-box;
+display: flex;
+justify-content: center;
+width: 37vw;
+height: 37vw;
+border: 3vw solid #fff;
+border-radius: 30%;
+}
+
+#circulo {
+box-sizing: border-box;
+align-self: center;
+width: 18vw;
+height: 18vw;
+border: 3vw solid #fff;
+border-radius: 50%;
+}
+
+#circulo-fechado {
+box-sizing: border-box;
+position: absolute;
+display: flex;
+align-self: flex-start;
+width: 4vw;
+height: 4vw;
+background: #fff;
+border-radius: 50%;
+margin: 3vw 0 0 16vw;
+}
+
+</style>
+
+<title>Logo do Instagram</title>
+</head>
+<body>
+  <div id="container">
+    <div id="fundo">
+      <div id="borda-branca">
+        <div id="circulo-fechado"></div>
+        <div id="circulo"></div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
